@@ -1,0 +1,198 @@
+
+body {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: black;
+}
+
+h1 {
+    margin: 100 0 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: black;
+    position: center;
+}
+
+video { display: block; } 
+
+video#bgvid { 
+position: fixed; right: 0; bottom: 0;
+min-width: 100%; min-height: 100%;
+width: auto; height: auto; z-index: -100; 
+
+background-size: cover; 
+z-index: 0;
+}
+@media only screen and (max-width: 768px) {
+    video#bgvid {display:none;} 
+}
+
+/* Stile della navbar*/
+
+.navbar-custom {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #000;
+}
+.navbar-custom .navbar-brand {
+    font-weight: 700;
+}
+.navbar-custom .navbar-brand:focus {
+    outline: 0;
+}
+.navbar-custom .navbar-brand .navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #FF4C00;
+}
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+    outline: 0;
+}
+.navbar-custom a {
+    color: #FF4C00;
+}
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+.navbar-custom .nav li a:hover {
+    outline: 0;
+    color: rgba(255,76,0,.9);
+    background-color: transparent;
+}
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+    outline: 0;
+    background-color: transparent;
+}
+.navbar-custom .nav li.active {
+    outline: 0;
+}
+.navbar-custom .nav li.active a {
+    background-color: rgba(0,71,255, .4);
+}
+.navbar-custom .nav li.active a:hover {
+    color: rgba(0,71,255, .8);
+}
+
+/* Css della pagine iniziale e del logo*/
+.intro {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background-color: transparent;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.brand-heading{
+    width: 90%;
+}
+
+.intro .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.intro .intro-body {
+    font-size: 18px;
+}
+
+/* Css del bottone rotondo a inizio pagina*/
+
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 350px;
+    padding: 7px 16px;
+    border: 2px solid #fff;
+    border-radius: 100%!important;
+    font-size: 40px;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+    position: relative;
+    z-index: 100;
+}
+
+.btn-circle:hover,
+.btn-circle:focus {
+    outline: 0;
+    color: #fff;
+    background: rgba(255,255,255,.1);
+}
+
+.btn-circle i.animated {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+}
+
+.btn-circle:hover i.animated {
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}
+
+#album, #tour, #contatti, #sponsor{
+    background: #fff; 
+    z-index: 100; 
+    position:relative; 
+    opacity:.9;
+    padding:20px;    
+
+}
+#album{
+    background-color: #FF4C00;
+}
+#tour{
+    background-color: rgba(0,71,255, .8);
+}
+.carousel {
+    width: 400px;
+    height: 100px;
+    position: relative; bottom: 350px; left: 700px;
+}
+
+
+
+
+img, iframe {
+    border-color: transparent;  
+}
+iframe{
+    padding: 0 5%;
+    height: 290px;
+}
+article {
+
+}
+
+footer {
+    background: #fff; 
+    z-index: 100; 
+    position:relative; 
+    height:300px;
+    opacity:.9;
+    padding: 50px 0; 
+}
+footer p {
+    margin: 0;
+}
+
